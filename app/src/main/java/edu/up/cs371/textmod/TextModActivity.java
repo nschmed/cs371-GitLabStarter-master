@@ -133,6 +133,20 @@ public class TextModActivity extends ActionBarActivity {
         }
         editText.setText(finalone);
     }
+    public void alternateButton(View view){
+        String two = editText.getText().toString();
+        String twofinal = "";
+        for(int i=0;i<two.length();i++){
+            if(i%2!=0){
+                twofinal+=two.substring(i,i+1).toUpperCase();
+            }
+            else if(i%2==0){
+                twofinal+=two.substring(i,i+1).toLowerCase();
+            }
+
+        }
+        editText.setText(twofinal);
+    }
 
     /**
      * class that handles our spinner's selection events
