@@ -10,12 +10,17 @@
         <item>@mipmap/nuxoll</item>
         <item>@mipmap/vegdahl</item>
         <item>@mipmap/angryface</item>
+        <item>@mipmap/linnea</item>
+        <item>@mipmap/melaniemartinell</item>
+
     </array>
 
     <string-array name="spinner_names">
         <item>Sleeping Kitten</item>
         <item>Dr. Andrew Nuxoll</item>
         <item>Dr. Steven Vegdahl</item>
+        <item>linnea</item>
+        <item>Melanie Martinell</item>
         <item>Angry Face</item>
     </string-array>
 
