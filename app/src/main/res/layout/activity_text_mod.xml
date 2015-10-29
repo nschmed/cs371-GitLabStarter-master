@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="#ff00ffd2"
     tools:context=".TextModActivity">
 
 
@@ -142,6 +142,14 @@
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"  />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:text="Shuffle letters"
+            android:clickable="true"
+            android:onClick = "shuffle"/>
     </LinearLayout>
 
     <Space
@@ -167,6 +175,14 @@
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="10"  />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove spaces"
+            android:id="@+id/button3"
+            android:clickable="true"
+            android:onClick="removeSpaces"/>
 
         <LinearLayout
             android:orientation="vertical"
