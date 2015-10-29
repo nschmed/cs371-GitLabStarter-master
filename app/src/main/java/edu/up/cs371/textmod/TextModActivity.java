@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import java.util.ArrayList;
+import java.util.List;
 
 public class TextModActivity extends ActionBarActivity {
 
@@ -77,6 +78,19 @@ public class TextModActivity extends ActionBarActivity {
         // define a listener for the spinner
         spinner.setOnItemSelectedListener(new MySpinnerListener());
 
+    }
+
+    public void shuffle(View view){
+        List<Character> characters = new ArrayList<Character>();
+        for(char c:editText.getText().toString().toCharArray()){
+            characters.add(c);
+        }
+        StringBuilder output = new StringBuilder(editText.getText().toString().length());
+        while(characters.size()!=0){
+            int randPicker = (int)(Math.random()*characters.size());
+            output.append(characters.remove(randPicker));
+        }
+        editText.setText(output.toString());
     }
 
     /**
