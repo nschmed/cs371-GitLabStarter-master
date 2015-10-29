@@ -134,6 +134,11 @@ public class TextModActivity extends ActionBarActivity {
         editText.setText(finalone);
     }
 
+    public void removeSpaces(View view)
+    {
+        editText.setText(editText.getText().toString().replaceAll("\\s+",""));
+    }
+
     /**
      * class that handles our spinner's selection events
      */
